@@ -16,7 +16,6 @@ export const getUsersThunk = createAsyncThunk<
 
       return items;
     } catch (e) {
-      console.log(e);
       return rejectWithValue(e as KnownError);
     }
   },
